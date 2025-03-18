@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MainSuite">
+  <test thread-count="5" name="MainTest">
+  <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="testpackage.VerificationClass"/>
+     
+      <class name="testpackage.ScenarioTest1"/>
+      <class name="testpackage.DataSupply"/>
+      <class name="testpackage.OrganizationTest"/>
+      <class name="testpackage.LeadTest"/>
+      <class name="testpackage.AtrributeTest"/>
+      <class name="testpackage.ScenarioTest2"/>
+      <class name="testpackage.ContactTest"/>
+    </classes>
+  </test> <!-- MainTest -->
+</suite> <!-- MainSuite -->

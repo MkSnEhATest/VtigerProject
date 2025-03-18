@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ContactSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ContactTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="testpackage.ContactTest">
+        <methods>
+          <include name="createContact"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- testpackage.ContactTest -->
+    </classes>
+  </test> <!-- ContactTest(failed) -->
+</suite> <!-- Failed suite [ContactSuite] -->

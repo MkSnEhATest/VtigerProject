@@ -1,0 +1,399 @@
+<html>
+<head>
+<title>TestNG:  MainTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MainTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 17 13:07:07 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>182 seconds (182084 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testpackage.OrganizationTest.logout()'><b>logout</b><br>Test class: testpackage.OrganizationTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.linkText: Sign Out
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at objectRepository.HomePage.SignOut(HomePage.java:58)
+	at utilities.BaseClass.logout(BaseClass.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1013620810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1013620810'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.linkText: Sign Out
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at objectRepository.HomePage.SignOut(HomePage.java:58)
+	at utilities.BaseClass.logout(BaseClass.java:68)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>testpackage.OrganizationTest@368f2016</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testpackage.AtrributeTest.moveToContacts()'><b>moveToContacts</b><br>Test class: testpackage.AtrributeTest<br/>
+<a href="#Output-808862230" onClick='toggleBox("Output-808862230", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-808862230" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-808862230">
+moveToContacts testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>testpackage.AtrributeTest@692f203f</td></tr>
+<tr>
+<td title='testpackage.LeadTest.createlead()'><b>createlead</b><br>Test class: testpackage.LeadTest<br/>
+<a href="#Output-462911221" onClick='toggleBox("Output-462911221", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-462911221" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-462911221">
+createlead testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>testpackage.LeadTest@4c583ecf</td></tr>
+<tr>
+<td title='testpackage.OrganizationTest.createOrganization()'><b>createOrganization</b><br>Test class: testpackage.OrganizationTest<br/>
+<a href="#Output-197449185" onClick='toggleBox("Output-197449185", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-197449185" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-197449185">
+createOrganization testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>testpackage.OrganizationTest@368f2016</td></tr>
+<tr>
+<td title='testpackage.VerificationClass.verify()'><b>verify</b><br>Test class: testpackage.VerificationClass<br/>
+<a href="#Output-123674777" onClick='toggleBox("Output-123674777", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-123674777" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-123674777">
+verify testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.VerificationClass@49139829</td></tr>
+<tr>
+<td title='testpackage.DataSupply.printData()'><b>printData</b><br>Test class: testpackage.DataSupply<br>Parameters: hari@gmail.com, hari@123<br/>
+<a href="#Output-1658704411" onClick='toggleBox("Output-1658704411", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1658704411" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1658704411">
+printData testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.DataSupply@4d5d943d</td></tr>
+<tr>
+<td title='testpackage.ScenarioTest2.TestCase4()'><b>TestCase4</b><br>Test class: testpackage.ScenarioTest2<br/>
+<a href="#Output-1387556178" onClick='toggleBox("Output-1387556178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1387556178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1387556178">
+TestCase4 testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.ScenarioTest2@48f2bd5b</td></tr>
+<tr>
+<td title='testpackage.AtrributeTest.moveToOrganization()'><b>moveToOrganization</b><br>Test class: testpackage.AtrributeTest<br/>
+<a href="#Output-1128032955" onClick='toggleBox("Output-1128032955", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1128032955" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1128032955">
+moveToOrganization testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>testpackage.AtrributeTest@692f203f</td></tr>
+<tr>
+<td title='testpackage.ContactTest.createContact()'><b>createContact</b><br>Test class: testpackage.ContactTest<br>Parameters: Ms., Mayooka, SR, Employee, Software Engineer, IT, Mayooka@gmail.com, 9704554670<br/>
+<a href="#Output-1327718030" onClick='toggleBox("Output-1327718030", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1327718030" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1327718030">
+createContact testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>testpackage.ContactTest@7b2bbc3</td></tr>
+<tr>
+<td title='testpackage.AtrributeTest.moveToCalenderPage()'><b>moveToCalenderPage</b><br>Test class: testpackage.AtrributeTest<br/>
+<a href="#Output-1421763091" onClick='toggleBox("Output-1421763091", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1421763091" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1421763091">
+moveToCalenderPage testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>testpackage.AtrributeTest@692f203f</td></tr>
+<tr>
+<td title='testpackage.ScenarioTest2.TestCase3()'><b>TestCase3</b><br>Test class: testpackage.ScenarioTest2<br/>
+<a href="#Output-878205641" onClick='toggleBox("Output-878205641", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-878205641" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-878205641">
+TestCase3 testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.ScenarioTest2@48f2bd5b</td></tr>
+<tr>
+<td title='testpackage.ContactTest.createContact()'><b>createContact</b><br>Test class: testpackage.ContactTest<br>Parameters: Mr., akshay, T C, Self Generated, Pharmacisit, Health, akshay@gmail.com, 9704884670<br/>
+<a href="#Output-1599248355" onClick='toggleBox("Output-1599248355", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1599248355" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1599248355">
+createContact testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>testpackage.ContactTest@7b2bbc3</td></tr>
+<tr>
+<td title='testpackage.DataSupply.printData()'><b>printData</b><br>Test class: testpackage.DataSupply<br>Parameters: helen@gmail.com, helen@123<br/>
+<a href="#Output-381930033" onClick='toggleBox("Output-381930033", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-381930033" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-381930033">
+printData testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.DataSupply@4d5d943d</td></tr>
+<tr>
+<td title='testpackage.DataSupply.printData()'><b>printData</b><br>Test class: testpackage.DataSupply<br>Parameters: sneha@gmail.com, sneha@123<br/>
+<a href="#Output-509858326" onClick='toggleBox("Output-509858326", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-509858326" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-509858326">
+printData testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.DataSupply@4d5d943d</td></tr>
+<tr>
+<td title='testpackage.ScenarioTest1.printData()'><b>printData</b><br>Test class: testpackage.ScenarioTest1<br>Parameters: pious@gmail.com, pious@123<br/>
+<a href="#Output-609879567" onClick='toggleBox("Output-609879567", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-609879567" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-609879567">
+printData testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.ScenarioTest1@7c7b252e</td></tr>
+<tr>
+<td title='testpackage.ScenarioTest1.printData()'><b>printData</b><br>Test class: testpackage.ScenarioTest1<br>Parameters: sneha@gmail.com, sneha@123<br/>
+<a href="#Output-2037806977" onClick='toggleBox("Output-2037806977", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2037806977" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2037806977">
+printData testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.ScenarioTest1@7c7b252e</td></tr>
+<tr>
+<td title='testpackage.ScenarioTest1.printData()'><b>printData</b><br>Test class: testpackage.ScenarioTest1<br>Parameters: hari@gmail.com, hari@123<br/>
+<a href="#Output-2017530134" onClick='toggleBox("Output-2017530134", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2017530134" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2017530134">
+printData testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.ScenarioTest1@7c7b252e</td></tr>
+<tr>
+<td title='testpackage.DataSupply.printData()'><b>printData</b><br>Test class: testpackage.DataSupply<br>Parameters: pious@gmail.com, pious@123<br/>
+<a href="#Output-756637412" onClick='toggleBox("Output-756637412", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-756637412" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-756637412">
+printData testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.DataSupply@4d5d943d</td></tr>
+<tr>
+<td title='testpackage.ScenarioTest1.printData()'><b>printData</b><br>Test class: testpackage.ScenarioTest1<br>Parameters: helen@gmail.com, helen@123<br/>
+<a href="#Output-181326224" onClick='toggleBox("Output-181326224", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-181326224" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-181326224">
+printData testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testpackage.ScenarioTest1@7c7b252e</td></tr>
+<tr>
+<td title='testpackage.AtrributeTest.moveToLeadsPage()'><b>moveToLeadsPage</b><br>Test class: testpackage.AtrributeTest<br/>
+<a href="#Output-220689785" onClick='toggleBox("Output-220689785", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-220689785" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-220689785">
+moveToLeadsPage testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>testpackage.AtrributeTest@692f203f</td></tr>
+<tr>
+<td title='testpackage.ContactTest.createContact()'><b>createContact</b><br>Test class: testpackage.ContactTest<br>Parameters: Mr., aswin, C, Employee, Bank Manager, Bank, aswin@gmail.com, 9704334670<br/>
+<a href="#Output-1009313206" onClick='toggleBox("Output-1009313206", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1009313206" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1009313206">
+createContact testcase execution started<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>testpackage.ContactTest@7b2bbc3</td></tr>
+</table><p>
+</body>
+</html>

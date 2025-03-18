@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Adhoc Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GroupTest(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <exclude name="adoc"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testpackage.AtrributeTest">
+        <methods>
+          <include name="login"/>
+          <include name="moveToCalenderPage"/>
+          <include name="moveToContacts"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- testpackage.AtrributeTest -->
+      <class name="testpackage.ScenarioTest2">
+        <methods>
+          <include name="login"/>
+          <include name="TestCase4"/>
+          <include name="TestCase3"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- testpackage.ScenarioTest2 -->
+    </classes>
+  </test> <!-- GroupTest(failed) -->
+</suite> <!-- Failed suite [Adhoc Suite] -->

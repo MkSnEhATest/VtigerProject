@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameter Suite">
+
+  <test thread-count="5" name="Parameter Test">
+
+  <parameter name="browser" value="edge"></parameter>
+  <parameter name="username" value="abcd@gmail.com"></parameter>
+  <parameter name="password" value="12345"></parameter>
+
+  <classes> 
+  <class name="testpackage.ParameterTest"></class>
+  </classes>
+  
+  </test> <!-- Parameter Test -->
+</suite> <!-- Parameter Suite -->

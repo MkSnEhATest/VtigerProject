@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[--------Execution started-------]]>
+    </line>
+    <line>
+      <![CDATA[verify testcase execution started]]>
+    </line>
+    <line>
+      <![CDATA[--------Execution started-------]]>
+    </line>
+    <line>
+      <![CDATA[verify testcase execution started]]>
+    </line>
+    <line>
+      <![CDATA[--------Execution started-------]]>
+    </line>
+    <line>
+      <![CDATA[verify testcase execution started]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-03-17T14:17:05 IST" name="CBT3Suite" finished-at="2025-03-17T14:17:22 IST" duration-ms="17600">
+    <groups>
+    </groups>
+    <test started-at="2025-03-17T14:17:05 IST" name="Test3" finished-at="2025-03-17T14:17:17 IST" duration-ms="12494">
+      <class name="testpackage.VerificationClass">
+        <test-method is-config="true" signature="login(java.lang.String)[pri:0, instance:testpackage.VerificationClass@6b2ea799]" started-at="2025-03-17T14:17:05 IST" name="login" finished-at="2025-03-17T14:17:17 IST" duration-ms="12191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verify()[pri:0, instance:testpackage.VerificationClass@6b2ea799]" started-at="2025-03-17T14:17:17 IST" name="verify" finished-at="2025-03-17T14:17:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[verify testcase execution started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:testpackage.VerificationClass@6b2ea799]" started-at="2025-03-17T14:17:17 IST" name="logout" finished-at="2025-03-17T14:17:17 IST" duration-ms="87" status="FAIL">
+          <exception class="org.openqa.selenium.JavascriptException">
+            <message>
+              <![CDATA[Cyclic object value
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9ca2ed69-635e-4998-80cd-65901500ef50, actions {actions=[org.openqa.selenium.interactions.Sequence@7fce43ea]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0.1, moz:accessibilityChecks: false, moz:buildID: 20250310180126, moz:debuggerAddress: 127.0.0.1:10070, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22756, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:10070/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9ca2ed69-635e-4998-80cd-65901500ef50]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.JavascriptException: Cyclic object value
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9ca2ed69-635e-4998-80cd-65901500ef50, actions {actions=[org.openqa.selenium.interactions.Sequence@7fce43ea]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0.1, moz:accessibilityChecks: false, moz:buildID: 20250310180126, moz:debuggerAddress: 127.0.0.1:10070, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22756, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:10070/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9ca2ed69-635e-4998-80cd-65901500ef50
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:578)
+at utilities.GenericUtilities.MouseHoverOn(GenericUtilities.java:85)
+at objectRepository.HomePage.SignOut(HomePage.java:57)
+at utilities.BaseClass.logout(BaseClass.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- testpackage.VerificationClass -->
+    </test> <!-- Test3 -->
+    <test started-at="2025-03-17T14:17:05 IST" name="Test2" finished-at="2025-03-17T14:17:20 IST" duration-ms="14978">
+      <class name="testpackage.VerificationClass">
+        <test-method is-config="true" signature="login(java.lang.String)[pri:0, instance:testpackage.VerificationClass@6771beb3]" started-at="2025-03-17T14:17:05 IST" name="login" finished-at="2025-03-17T14:17:13 IST" duration-ms="8577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verify()[pri:0, instance:testpackage.VerificationClass@6771beb3]" started-at="2025-03-17T14:17:13 IST" name="verify" finished-at="2025-03-17T14:17:13 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[verify testcase execution started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:testpackage.VerificationClass@6771beb3]" started-at="2025-03-17T14:17:13 IST" name="logout" finished-at="2025-03-17T14:17:20 IST" duration-ms="6166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- testpackage.VerificationClass -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-03-17T14:17:05 IST" name="Test" finished-at="2025-03-17T14:17:22 IST" duration-ms="17600">
+      <class name="testpackage.VerificationClass">
+        <test-method is-config="true" signature="login(java.lang.String)[pri:0, instance:testpackage.VerificationClass@245b4bdc]" started-at="2025-03-17T14:17:05 IST" name="login" finished-at="2025-03-17T14:17:15 IST" duration-ms="10294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verify()[pri:0, instance:testpackage.VerificationClass@245b4bdc]" started-at="2025-03-17T14:17:15 IST" name="verify" finished-at="2025-03-17T14:17:15 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[verify testcase execution started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:testpackage.VerificationClass@245b4bdc]" started-at="2025-03-17T14:17:15 IST" name="logout" finished-at="2025-03-17T14:17:22 IST" duration-ms="7109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- testpackage.VerificationClass -->
+    </test> <!-- Test -->
+  </suite> <!-- CBT3Suite -->
+</testng-results>

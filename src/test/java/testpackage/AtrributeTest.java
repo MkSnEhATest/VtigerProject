@@ -38,6 +38,13 @@ public class AtrributeTest extends BaseClass {
 //		System.out.println("Contacts page pass");
 		System.out.println("adhoc 1");
 	}
+	
+	@Test(groups = "adhoc")
+	public void moveToContacts2() {
+		hp.clickContactsLink();
+//		System.out.println("Contacts page pass");
+		System.out.println("adhoc 3");
+	}
 }
 //description = "Adhoc scenario" given in test annotation braces
 //description = "system scenario"
